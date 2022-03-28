@@ -110,9 +110,7 @@ def quad_sim():
             angle_of_axis = acos((trace(rel_R) - 1) / 2)
             
             # get the rotation error 
-            rotation_error = angle_of_axis * normalize(axis)
-            
-            #rotation_error = [0, 0, 0]            
+            rotation_error = angle_of_axis * normalize(axis)           
             
             
             desire_w = np.array([des_roll_rate,des_pitch_rate,des_yaw_rate]).reshape(3,1)
